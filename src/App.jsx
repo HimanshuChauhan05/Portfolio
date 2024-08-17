@@ -6,7 +6,6 @@ import ProjectsShowcase from "./Components/ProjectsShowcase";
 
 const App = () => {
   return <>
-  {/* bg-slate-300 */}
     <div  className="w-full h-full">
     
       <Routes>

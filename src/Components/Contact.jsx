@@ -19,15 +19,11 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // Add your form submission logic here
   };
 
   return (
     <motion.div 
       className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-100 via-teal-50 to-purple-100"
-    //   initial={{ opacity: 0, y: 50 }}
-    //   animate={{ opacity: 1, y: 0 }}
-    //   transition={{ duration: 0.8 }}
     >
       <form 
         onSubmit={handleSubmit} 

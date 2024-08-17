@@ -26,9 +26,7 @@ const InfoandPhoto = () => {
   return (
     <div className="w-full h-5/6 flex flex-col sm:flex-row items-center justify-evenly  sm:mt-11">
       <div className="w-full sm:w-[40%] order-2 sm:order-1 text-black p-5 px-11 leading-8">
-        {/* <h3 className="text-3xl sm:text-4xl">Hello,</h3> */}
         <h1 className="text-2xl md:text-4xl lg:text-6xl xl:text-7xl   whitespace-nowrap ">Himanshu Chauhan</h1>
-        {/* <h2 className="text-4xl font-bold text-gray-800 mb-10">Welcome to My Portfolio</h2> */}
         <div className='px-2'>
           <TypingEffect />
 

@@ -9,8 +9,6 @@ import FitForge from '../assets/FitForge.png';
 import Navbar from './Navbar';
 
 
-// Individual project card component with image, animations, and enhanced styling
-<Navbar />
 const ProjectCard = ({ title, description, link, techStack, image }) => {
     const handleClick = () => {
       window.open(link, '_blank');
@@ -49,42 +47,42 @@ const ProjectsShowcase = () => {
       description: 'An e-commerce platform designed for seamless product browsing and purchase.',
       link: 'https://product-hub-lake.vercel.app/',
       techStack: ['React', 'Tailwindcss'],
-      image: Product // Replace with your image URL
+      image: Product 
     },
     {
       title: 'FitForge GYM Website',
       description: 'A modern GYM website with merchandise, BMI calculator, and exercise sections.',
       link: 'https://fit-forge.vercel.app/',
       techStack: ['HTML', 'CSS', 'JavaScript'],
-      image: FitForge // Replace with your image URL
+      image: FitForge 
     },
     {
       title: 'RayBan Landing Page',
       description: ' A modern landing Page created with unique animations.',
-      link: 'https://landing-page-snowy-omega.vercel.app/', // Replace with your GitHub or live project link
+      link: 'https://landing-page-snowy-omega.vercel.app/', 
       techStack: ['HTML', 'CSS', 'JavaScript'],
-      image: Rayban // Replace with your image URL
+      image: Rayban 
     },
     {
         title: 'Portfolio Website',
         description: 'A sleek, responsive personal portfolio to showcase projects and skills',
-        link: '#', // Replace with your GitHub or live project link
+        link: '#',
         techStack: ['React', 'Tailwindcss'],
-        image: Portfolio // Replace with your image URL
+        image: Portfolio 
     },
     {
         title: 'Cynthia Website Clone',
         description: 'A clone of the Cynthia website with a focus on UI and animations.',
-        link: 'https://cynthia-clone-omega.vercel.app/', // Replace with your GitHub or live project link
+        link: 'https://cynthia-clone-omega.vercel.app/', 
         techStack: ['HTML', 'CSS', 'JavaScript'],
-        image: Cynthia // Replace with your image URL
+        image: Cynthia 
     },
     {
       title: 'Info Card',
       description: 'A basic personal info card maker.',
-      link: 'https://react-info-card.vercel.app/', // Replace with your GitHub or live project link
+      link: 'https://react-info-card.vercel.app/', 
       techStack: ['React', 'Tailwindcss'],
-      image: Info // Replace with your image URL
+      image: Info 
     }
   ];
 

@@ -12,14 +12,7 @@ const Footer = () => {
             <h2 className="text-2xl font-bold">Portfolio</h2>
             <p className="mt-2">Showcasing my projects and skills. Feel free to connect!</p>
           </div>
-
-          {/* Navigation Links
-          <div className="flex flex-col md:flex-row md:space-x-6 mb-6 md:mb-0">
-            <a href="#home" className="hover:underline">Home</a>
-            <a href="#projects" className="hover:underline">Projects</a>
-            <a href="#services" className="hover:underline">Services</a>
-            <a href="#contact" className="hover:underline">Contact</a>
-          </div> */}
+          
 
           {/* Social Media Links */}
           <div className="flex space-x-4">
