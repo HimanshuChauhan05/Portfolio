@@ -32,7 +32,10 @@ const InfoandPhoto = () => {
 
         </div>
         <div className="mt-6 w-full flex gap-2">
-          <button className="text-black bg-blue-400 flex gap-2 justify-center items-center rounded-full w-32 h-10">Resume <FaDownload/></button>
+          <a href={'https://drive.google.com/file/d/1ehW8LbKXl7dijYCuN0T1BLXKQZdFCEG7/view?usp=sharing'} download target="_blank"> 
+
+            <button className="text-black bg-blue-400 flex gap-2 justify-center items-center rounded-full w-32 h-10">Resume <FaDownload/></button>
+          </a>
           <button className="text-black bg-blue-400 rounded-full w-32 h-10">Hire me</button>
         </div>
       </div>
