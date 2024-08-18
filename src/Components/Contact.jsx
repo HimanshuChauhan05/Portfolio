@@ -29,7 +29,7 @@ const Contact = () => {
         onSubmit={handleSubmit} 
         className="bg-white shadow-lg rounded-lg p-8 w-full max-w-lg"
       >
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Contact Us</h2>
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Contact Me</h2>
         
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">Name</label>

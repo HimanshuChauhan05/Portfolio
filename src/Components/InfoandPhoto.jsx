@@ -7,6 +7,7 @@ import Info from '../assets/Info.png';
 import Portfolio from '../assets/Portfolio.png';
 import Rayban from '../assets/Rayban.png';
 import FitForge from '../assets/FitForge.png';
+import { Link } from "react-router-dom";
 
 const photos = [
   Product, Cynthia, Info, Portfolio, Rayban, FitForge
@@ -36,7 +37,7 @@ const InfoandPhoto = () => {
 
             <button className="text-black bg-blue-400 flex gap-2 justify-center items-center rounded-full w-32 h-10">Resume <FaDownload/></button>
           </a>
-          <button className="text-black bg-blue-400 flex gap-2 justify-center items-center rounded-full w-32 h-10">Hire me</button>
+          <Link to="/contact" className="text-black bg-blue-400 flex gap-2 justify-center items-center rounded-full w-32 h-10">Hire me</Link>
         </div>
       </div>
       <div className="w-full sm:w-1/2 order-1 sm:order-2 flex items-center justify-center p-5 ">
