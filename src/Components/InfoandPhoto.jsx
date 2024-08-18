@@ -26,22 +26,22 @@ const InfoandPhoto = () => {
   return (
     <div className="w-full h-5/6 flex flex-col sm:flex-row items-center justify-evenly  sm:mt-11">
       <div className="w-full sm:w-[40%] order-2 sm:order-1 text-black p-5 px-11 leading-8">
-        <h1 className="text-2xl md:text-4xl lg:text-6xl xl:text-7xl   whitespace-nowrap ">Himanshu Chauhan</h1>
+        <h1 className="text-2xl md:text-4xl lg:text-4xl xl:text-7xl   whitespace-nowrap ">Himanshu Chauhan</h1>
         <div className='px-2'>
           <TypingEffect />
 
         </div>
         <div className="mt-6 w-full flex gap-2">
-          <a href={'https://drive.google.com/file/d/1ehW8LbKXl7dijYCuN0T1BLXKQZdFCEG7/view?usp=sharing'} download target="_blank"> 
+          <a href={'https://drive.google.com/file/d/12HiKiwEVz3i7GarUdwKz4ym9DdJp2PHb/view?usp=drive_link'} download target="_blank"> 
 
             <button className="text-black bg-blue-400 flex gap-2 justify-center items-center rounded-full w-32 h-10">Resume <FaDownload/></button>
           </a>
-          <button className="text-black bg-blue-400 rounded-full w-32 h-10">Hire me</button>
+          <button className="text-black bg-blue-400 flex gap-2 justify-center items-center rounded-full w-32 h-10">Hire me</button>
         </div>
       </div>
       <div className="w-full sm:w-1/2 order-1 sm:order-2 flex items-center justify-center p-5 ">
         <img
-          className="w-[20rem] h-[13rem] sm:w-96 sm:h-96 object-cover object-left-top rounded-lg"
+          className="w-[20rem] h-[13rem] sm:w-[90%] sm:h-96 object-cover overflow-hidden object-left-top rounded-lg"
           src={photos[currentPhotoIndex]}
           alt="Project"
         />

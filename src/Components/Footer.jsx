@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaTwitter, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 
+
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-6">
@@ -27,18 +28,21 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/himanshu-chauhan-0b9b5b220/"
               className="text-gray-400 hover:text-white"
+              target="_blank"
             >
               <FaLinkedin size={24} />
             </a>
             <a
               href="https://github.com/HimanshuChauhan05"
               className="text-gray-400 hover:text-white"
+              target="_blank"
             >
               <FaGithub size={24} />
             </a>
             <a
               href="https://www.instagram.com/himanshuchauhan0005/"
               className="text-gray-400 hover:text-white"
+              target="_blank"
             >
               <FaInstagram size={24} />
             </a>

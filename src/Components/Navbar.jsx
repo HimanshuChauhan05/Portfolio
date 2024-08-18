@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Logoimg from '../assets/Logo.png'; 
+import { MdOutlineMenu } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,21 +28,21 @@ const Navbar = () => {
       </div>
       <div className="w-1/2 flex justify-end pr-5 text-xl">
         {isMobile ? (
-          <button onClick={toggleMenu} className="focus:outline-none">
-            Menu
+          <button onClick={toggleMenu} className="focus:outline-none text-2xl">
+            <MdOutlineMenu />
           </button>
         ) : (
-          <ul className="flex gap-8 font-semibold">
-            <li className="pl-11">
+          <ul className="flex gap-8 font-semibold ">
+            <li className="pl-11 hover:underline">
               <Link to="/">Home</Link>
             </li>
             <li className="pl-11">
-              <a href={'https://drive.google.com/file/d/1ehW8LbKXl7dijYCuN0T1BLXKQZdFCEG7/view?usp=sharing'} download target="_blank" className="hover:underline">Resume</a>
+              <a href={'https://drive.google.com/file/d/12HiKiwEVz3i7GarUdwKz4ym9DdJp2PHb/view?usp=drive_link'} download target="_blank" className="hover:underline">Resume</a>
             </li>
-            <li className="pl-11">
+            <li className="pl-11 hover:underline">
               <Link to="/projects">Projects</Link>
             </li>
-            <li className="pl-11">
+            <li className="pl-11 hover:underline">
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
