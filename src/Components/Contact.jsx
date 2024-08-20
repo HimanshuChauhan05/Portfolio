@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,7 +19,27 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    
+    // Replace with your EmailJS service ID, template ID, and user ID
+    const serviceID = env.REACT_APP_SERVICE_ID;
+    const templateID = env.REACT_APP_TEMPLATE_ID;
+    const userID = env.REACT_APP_USER_ID;
+
+    emailjs.send(serviceID, templateID, formData, userID)
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+        alert('Message sent successfully!');
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+        alert('Failed to send message. Please try again later.');
+      });
   };
 
   return (
