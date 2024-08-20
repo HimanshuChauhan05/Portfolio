@@ -21,13 +21,14 @@ const Contact = () => {
     e.preventDefault();
     
     // Replace with your EmailJS service ID, template ID, and user ID
-    const serviceID = env.REACT_APP_SERVICE_ID;
-    const templateID = env.REACT_APP_TEMPLATE_ID;
-    const userID = env.REACT_APP_USER_ID;
+    const serviceID = import.meta.env.VITE_SERVICE_ID;
+    const templateID = import.meta.env.VITE_TEMPLATE_ID;
+    const userID = import.meta.env.VITE_USER_ID;
+
 
     emailjs.send(serviceID, templateID, formData, userID)
       .then((response) => {
-        console.log('Email sent successfully:', response);
+        // console.log('Email sent successfully:', response);
         alert('Message sent successfully!');
         setFormData({
           name: '',
