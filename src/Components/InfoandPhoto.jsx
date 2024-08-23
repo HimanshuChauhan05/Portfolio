@@ -37,7 +37,7 @@ const InfoandPhoto = () => {
 
             <button className="text-black bg-blue-400 flex gap-2 justify-center items-center rounded-full w-32 h-10">Resume <FaDownload/></button>
           </a>
-          <Link to="/contact" className="text-black bg-blue-400 flex gap-2 justify-center items-center rounded-full w-32 h-10">Hire me</Link>
+          <Link to="/contact" className="text-black bg-blue-400 flex gap-2 justify-center items-center rounded-full w-32 h-10">Hire</Link>
         </div>
       </div>
       <div className="w-full sm:w-1/2 order-1 sm:order-2 flex items-center justify-center p-5 ">
